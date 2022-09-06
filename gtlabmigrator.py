@@ -8,6 +8,7 @@ gl = gitlab.Gitlab(private_token="<token-gitlab-com>")
 glnew = gitlab.Gitlab('<URL-selfhosted-gitlab>', private_token="<token-selfhosted-gitlab>")
 
 gl.auth()
+glnew.auth()
 groups = gl.groups.list()
 
 for x in groups:
